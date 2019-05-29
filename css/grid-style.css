@@ -1,0 +1,23 @@
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-column-gap: 1em;
+}
+
+.card {
+	grid-column: span 2 ;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.logo {
+	grid-column: 1/2;
+	justify-self: start;
+}
+
+.title {
+	grid-column: 3/span 4;
+	justify-self: end;
+}
